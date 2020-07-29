@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+			/*Classes auxiliares*/
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{
+	clear: both;
+}
+
+			/*Estilização do Site*/
+
+				/*Menu TOPO*/
+
+header{
+	padding: 10px 0;
+}
+ nav.menu-desk ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+   background-color: #333;
+   overflow: hidden;
+}
+
+nav.menu-desk ul li {
+  float: right;
+}
+
+nav.menu-desk ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ nav.menu-desk ul li a:hover:not(.active) {
+  background-color: #111;}
+
+ nav.menu-desk ul li a.active {
+  background-color: #4CAF50;
+ text-decoration: underline;
+}
+
+body nav.menu-desk ul> span.logo{
+	float: left;
+	color: white;
+	padding: 5px 0 0 10px;	
+	font-size: 30px;
+	text-decoration: underline;
+}
+body nav.menu-desk ul> span.logo:hover{
+	cursor: pointer;
+}

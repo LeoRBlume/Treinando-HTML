@@ -1,0 +1,562 @@
+*{
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}	
+
+			/*Classes auxiliares*/
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{
+	clear: both;
+}
+
+.w50{
+	width: 50%;
+	float: left;
+}
+
+
+.w60{
+	width: 60%;
+	float: left;
+
+}
+.w40{
+	width: 40%;
+	float: left;
+
+}
+.w100{
+width: 100%;
+float: left;
+
+}
+.center {text-align: center;}
+
+			/*Estilização do Site*/
+
+				/*Menu TOPO DESKTOP*/
+
+header{
+	padding: 10px 0;
+}
+ nav.menu-desk ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+   background-color: #333;
+   overflow: hidden;
+}
+
+nav.menu-desk ul li {
+  float: right;
+}
+
+nav.menu-desk ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ nav.menu-desk ul li a:hover:not(.active) {
+  background-color: #111;}
+
+ nav.menu-desk ul li a.active {
+  background-color: #4CAF50;
+ text-decoration: underline;
+}
+
+body nav.menu-desk ul> span.logo{
+	float: left;
+	color: white;
+	padding: 5px 0 0 10px;	
+	font-size: 30px;
+	text-decoration: underline;
+}
+body nav.menu-desk ul> span.logo:hover{
+	cursor: pointer;
+}
+						/*Menu TOPO MOBILE*/
+
+nav.menu-mobile{display: none;}
+header h2.logo-menu{
+	display: none;
+	float: left;
+	color: black;
+	font-size: 30px;
+	text-decoration: underline;
+	}
+
+
+nav.menu-mobile h2 i{
+	float: right;
+	cursor: pointer;
+	margin-top: 10px
+} 
+
+
+.menu-mobile ul{display: none;
+width: 100%;
+background: #fcc019;
+position: absolute;
+left: 0;
+top: 55px;
+z-index: 99;
+text-align: center;
+color: white;
+}
+
+.menu-mobile ul li{
+	padding: 5px 0;
+	border: 1px solid rgb(0, 0, 0, 0.2);
+
+}
+
+.menu-mobile ul li a{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: lighter;
+	color: black
+}
+
+
+					/*INICIO DO SITE-SESSAO MAIN  1ºBACKGROUND*/
+section.diferencias{
+	display: block;
+
+}
+ section.main-bg{
+ 	width: 100%;
+ 	position: relative;
+ 	background-image: url(img/wallpaper.jpg);
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	background-size: cover;
+ 	padding: 140px 0 200px 0;
+ 	text-align: center;
+ }
+ section.main-bg h2{
+ 	color: #E1E3E3;
+ 	font-size: 30px;
+ 	padding-bottom: 30px;
+ }
+section.main-bg p{
+	text-align: left;	
+	margin-top: 12px;
+	font-size: 15px;
+	color: #C5C7C7;
+}
+								/*EFEITO DA IMAGEM ESCURA*/
+.fosco{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgb(0,0,0,0.5);
+	z-index: 1
+}
+section.main-bg > .container{
+	position: relative;
+	z-index: 2
+}
+  						/*FIM DO BACKGROUND COM TEXTO*/
+
+  				/*EXPERIENCIAS DO USUARIO COM ICONES FONT AWESOME*/
+
+section.diferencias{
+	margin-top: 30px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.line-text h2{
+	display: inline-block;
+	color: #fcc019;
+	border-top: 2px solid #fcc019;
+ 
+}
+							/*USANDO FONT AWESOME*/
+
+.icones-diferentes{
+	margin-top: 20px;
+
+}
+
+section.diferencias .icones-box-unico{
+	margin-top: : 30px;
+	width: 33.3%;
+	float:left;
+	text-align:center;
+	margin-bottom: 20px;
+}
+
+.box-unico p{
+	padding-bottom: 5px;
+
+}
+
+
+						/*CONHEÇA NOSSA EQUIPE*/
+
+section.sobre-equipe{
+	padding: 30px 0;
+	background-color: rgb(225,225,225);
+}
+
+section.sobre-equipe> .container{
+display: flex;
+flex-wrap: wrap;
+}
+
+.equipe-container{
+width: 50%;
+}
+
+.sobre-container{
+	width: 50%;
+
+}
+
+section.sobre-equipe .sobre-container p{
+	color: black;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+					/*IMAGEM AVATAR*/
+.avatar-box{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.img-avatar{
+	display: inline-block;
+	width: 70px;
+	height: 70px;	
+	border-radius: 50%;
+	background-size: 100% 100%;
+}
+
+				/*AVATAR NOME E SOBRE*/
+
+.description-avatar{
+	padding: 0 10px;
+	display: inline-block;
+	width: calc(100% - 70px);
+}
+
+.description-avatar h3{
+	color: rgb(30,30,30);
+	font-weight: normal;
+	font-style: italic;
+}
+
+.description-avatar p{
+color: rgb(30,30,30);
+font-weight: lighter;
+
+}
+
+				/*SECTION DE INSCRIÇÂO*/
+section.inscricao{
+	background-color: #e3ac22;
+	padding: 20px 0	}
+
+.inscricao-text{
+	padding: 5px;
+
+}
+
+.inscricao-form input[type=text]{
+	width: calc(100% - 120px);
+	height: 40px;
+	background: white;
+	border: 1px solid white;
+	display: inline-block;}
+
+.inscricao-form input[type=submit]{
+	width: 120px;
+	height: 40px;
+	background: #c2931d;
+	border:0;
+	display: inline-block;
+	cursor: pointer;
+	color: black;
+	font-weight: normal;
+	font-size: 16px}
+
+					/*FIM SECTION INSCRIÇÂO*/
+
+					/*	INICIO BANDAS*/
+
+section.cards{
+	padding: 30px 0;
+}
+
+.card-single{
+	float: left;
+	width: 33.3%;
+	padding: 20px 30px 15px 30px;
+	cursor: pointer;
+}
+
+.card-single img{
+	width: 100%;
+	height: 300px;
+	border-bottom: 2px solid white;		
+}
+
+.card-single h3{
+	font-weight: normal;
+	font-size: 19px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.card-single p{
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 2px solid rgb(122, 121, 121, 0.5)
+}
+
+
+								/*FOOTER*/
+
+footer.footer1{
+background-color: #e3ac22; 
+}
+
+footer.footer1 h2{
+	font-weight: normal;
+	font-size: 25px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+
+footer.footer1 p{
+	padding-bottom: 5px;
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+footer.footer1 a{
+	text-decoration: none;
+}
+
+footer.footer1 a:hover{
+	font-size: 20px;
+
+}
+
+			/*DIREITOS RESERVADOS*/
+.footer2{
+	text-align: center;
+	background-color: #c49616;
+}
+
+.footer2 p{
+	padding: 10px 0;
+
+}
+						/*FIM DA HOME*/
+					/*INICIO PAGINA SOBRE*/
+
+section.title-page > .container{
+position: relative;
+z-index: 1001;
+
+}
+
+section.title-page{
+	padding: 30PX;
+	width: 100%;
+	min-height: 200px; 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.overlay__title-page{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background: rgba(0,0,0,0.4)	;
+}
+
+section.title-page h2{
+color: #E1E3E3;
+font-size: 30px;
+font-weight: normal;
+
+}
+
+
+section.title-page p{
+	color: #C5C7C7;
+	margin-top: 20px; 
+
+	font-size: 15px;
+}
+
+								/*SOBRE AS BANDAS*/
+
+section.sobre__band{
+margin: 20px 0;
+}
+section.sobre__band h2{
+	font-size: 30px;
+	font-weight: normal;
+
+}
+
+section.sobre__band p{
+	padding: 15px 0;
+	font-weight: lighter;
+
+}
+
+section.sobre__band img{
+	float: left;
+	margin-right: 20px;
+	width: 300px;
+	height: 300px;
+
+}
+							/*EFEITO PARALAX*/
+section.paralax{
+	position: relative;
+	padding: 30px 0 ;
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+background-attachment: fixed;	
+}
+
+						/*SITE CONTATO*/
+
+section.contato{
+	padding: 35px 0;
+}
+
+section.contato .w50,
+section.contato .w100{
+	padding: 0 10px;
+
+}
+
+.formulario h2{
+	background: #DDDDDD;
+	text-align: center; 	
+	color: #ACAC9D;
+	font-size: 17px;
+	font-weight: normal;
+	border-left: 5px solid #DDDDDD;
+	padding: 4px 0;
+	margin-bottom: 5px;
+
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{
+	width: 100%;
+	height: 50px;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	padding-left: 5px;
+}
+
+.formulario textarea{
+	width: 100%;
+	height: 50px;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	padding-left: 5px;
+	resize: vertical;
+	min-height: 200px;
+	padding-top: 10px;
+	padding-left: 5px;
+
+}
+
+.tags-form{
+	padding-left: 40px;
+}
+
+.tags-form h2{
+	font-weight: normal;}
+
+
+.tags-form p{
+	margin-top: 7px;
+	font-weight: lighter;
+
+}
+.tags-form p.tag-contato{
+	background:#249B8F; 
+	color: white;
+	text-align: center;
+	padding: 7px 4px;
+
+}
+
+.tags-form p.tag-contato i{
+	padding-right: 10px;
+}
+
+/*DESIGN RESPONSIVO PARA DEIXAR AS INFO DAS PESSOAS UMA POR LINHA DE ACORDO COM O TAMANHO DA TELA*/
+
+@media screen and (max-width: 768px){
+ section.diferencias .icones-box-unico{
+ 	width: 100%;}	
+
+.equipe-container{
+width: 100%;}
+
+.sobre-container{
+	width: 100%;
+	margin-top:50px; }
+
+.w50,.w60,.w100,.w40{width: 100%; margin-bottom: 20px}
+
+.card-single{
+	width: 100%;
+
+}
+section.sobre__band img{
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	margin-left: 100px;
+	margin-bottom: 20px;	
+
+}
+.tags-form .contato-title h2,
+.tags-form .contato-title{
+	text-align: center;
+}
+
+.
+}
+
+@media screen and (max-width: 500px){	
+nav.menu-desk{display: none;}
+nav.menu-mobile{display: block;}
+header h2.logo-menu{display:block;}
+
+}
